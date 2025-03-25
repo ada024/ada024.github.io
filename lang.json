@@ -1,0 +1,14 @@
+{
+  "en": {
+    "developer": "Developer",
+    "about": "About",
+    "exp": "experiences",
+    "workExperiences": "Work experiences"
+  },
+  "no": {
+    "developer": "Utvikler",
+    "about": "Om",
+    "exp": "Erfaring",
+    "workExperiences": "Arbeidserfaring"
+  }
+}
