@@ -2,11 +2,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const page = location.pathname.split("/").pop();
 
-    if (page === 'index.html' || page === '') {
-        getProjects();
-    } else if (page === 'exp.html') {
-        getExp();
-    }
+    // if (page === 'index.html' || page === '') {
+    //     getProjects();
+    // } else if (page === 'exp.html') {
+    //     getExp();
+    // }
+
+
+    document.getElementById('language-select').addEventListener('change', function () {
+        const selectedLang = this.value;
+        updateLanguage(selectedLang);
+    });
+
 });
 
 
@@ -61,13 +68,46 @@ function getProjects() {
             });
         })
         .catch(error => {
-            console.error('Error loading pies:', error);
+            console.error('Error loading:', error);
             container.innerHTML = '<p>Failed to load projects</p>';
         });
 }
 
 function getExp() {
-    console.log("fetching experiences ")
+    const container = document.getElementById('exp-container');
+    container.innerHTML = "Loading..."
+
+    fetch('data.json')
+        .then(response => response.json())
+        .then(data => {
+            container.innerHTML ="";
+            data.forEach(item => {
+                const section = document.createElement('section');
+
+                section.className = ' column small-6 medium-4 large-3';
+
+                const cname = document.createElement('h3');
+                h3.textContent = item.company_name;
+                section.appendChild(cname);
+
+
+                const duration = document.createElement('h3');
+                h3.textContent = item.duration;
+                section.appendChild(duration);
+
+                const position = document.createElement('h3');
+                h3.textContent = item.position;
+                section.appendChild(position);
+
+
+                container.appendChild(section);
+
+            });
+        })
+        .catch(error => {
+            console.error('Error loading:', error);
+            container.innerHTML = '<p>Failed to load projects</p>';
+        });
 }
 
 
@@ -90,10 +130,7 @@ fetch('lang.json')
         console.error("Error loading language file:", error);
     });
 
-document.getElementById('language-select').addEventListener('change', function () {
-    const selectedLang = this.value;
-    updateLanguage(selectedLang);
-});
+
 
 function updateLanguage(lang) {
     const elements = document.querySelectorAll('[data-i18n]');
@@ -102,3 +139,12 @@ function updateLanguage(lang) {
         el.textContent = translations[lang][key] || key;
     });
 }
+
+
+
+
+function toggleMenu() {
+    document.getElementById("primaryNav").classList.toggle("open");
+}
+let x = document.getElementById('hamburgerBtn');
+x.onclick = toggleMenu;

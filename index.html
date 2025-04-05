@@ -15,6 +15,18 @@
 
     <title>Home | Portfolio</title>
 </head>
+<script type="text/javascript" src="js/config.js"></script>
+<script type="text/javascript" src="js/ajax/ajax.js"></script>
+<script type="text/javascript" src="js/ajax/ajaxperiodic.js"></script>
+<script type="text/javascript" src="js/util/error.js"></script>
+<script type="text/javascript" src="js/ui/projectListUI.js"></script>
+<script type="text/javascript" src="js/controller/controller.js"></script>
+<script type="text/javascript">
+    "use strict";
+    var app = new AppController("product-container")
+    document.addEventListener('DOMContentLoaded',app.run.bind(app),false)
+</script>
+
 
 <body>
 <header class="clearfix">
@@ -44,16 +56,14 @@
 </nav>
 
 <main class="clearfix">
-
-
     <div class="row limited">
         <section class="column small-12">
             <h1>Projects</h1>
         </section>
-    </div><!-- end row -->
-
-
-    <div class="row limited" id="product-container"></div>
+    </div>
+    <div class="row limited" id="product-container">
+        <div class="plist"></div>
+    </div>
 </main>
 
 <footer class="clearfix">
@@ -69,8 +79,7 @@
 
     </div>
 </footer>
-<script src="js/script.js"></script>
-<script src="js/menuToggle.js"></script>
-
 </body>
+
+<script src="js/script.js"></script>
 </html>
