@@ -1,14 +1,18 @@
 {
   "en": {
     "developer": "Developer",
-    "about": "About",
+    "projects": "Projects",
     "exp": "experiences",
-    "workExperiences": "Work experiences"
+    "about": "About",
+    "workExperiences": "Work experiences",
+    "socialMedia": "Social"
   },
   "no": {
     "developer": "Utvikler",
-    "about": "Om",
+    "projects": "Prosjekter",
     "exp": "Erfaring",
-    "workExperiences": "Arbeidserfaring"
+    "about": "Om",
+    "workExperiences": "Arbeidserfaring",
+    "socialMedia": "Sosial"
   }
 }
