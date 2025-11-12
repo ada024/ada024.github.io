@@ -32,8 +32,8 @@ class ProjectListUI {
         if (item.urisrc) {
             const li = document.createElement('li');
             const a = document.createElement('a');
-            a.href = 'https://url/33hs';
-            a.target = '_blank'; // Optional: open in new tab
+            a.href = item.urisrc;
+            a.target = '_blank';
             a.rel = 'noopener noreferrer'; // Security best practice
             const icon = document.createElement('i');
             icon.className = 'fa fa-github';
