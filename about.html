@@ -12,9 +12,19 @@
     <link href="css/small.css" rel="stylesheet">
     <link href="css/medium.css" rel="stylesheet">
     <link href="css/large.css" rel="stylesheet">
-
     <title>Home | Portfolio</title>
 </head>
+<script type="text/javascript" src="js/config.js"></script>
+<script type="text/javascript" src="js/ajax/ajax.js"></script>
+<script type="text/javascript" src="js/ajax/ajaxperiodic.js"></script>
+<script type="text/javascript" src="js/util/error.js"></script>
+<script type="text/javascript" src="js/ui/aboutUI.js"></script>
+<script type="text/javascript" src="js/controller/controller.js"></script>
+<script type="text/javascript">
+    "use strict";
+    var app = new AppController("about-container")
+    document.addEventListener('DOMContentLoaded', app.run.bind(app), false)
+</script>
 
 <body>
 <header class="clearfix">
@@ -70,7 +80,5 @@
     </div>
 </footer>
 <script src="js/script.js"></script>
-<script src="js/menuToggle.js"></script>
-
 </body>
 </html>
