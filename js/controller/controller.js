@@ -1,17 +1,18 @@
 class AppController {
     constructor(containerId) {
         this._containerId = containerId
+        this.domain =config.prod
         this.listUI = null
         // used for page-content load
         this.page = location.pathname.split("/").pop();
 
         // Determine which page
         if (this.page === 'index.html' || this.page === '') {
-            this.ajaxperiodic = new AJAXPeriodic(config.servicesPath + "/data/proData.json")
+            this.ajaxperiodic = new AJAXPeriodic(this.domain + "/data/proData.json")
         } else if (this.page === 'exp.html') {
-            this.ajaxperiodic = new AJAXPeriodic(config.servicesPath + "/data/expData.json")
+            this.ajaxperiodic = new AJAXPeriodic(this.domain + "/data/expData.json")
         } else if (this.page === 'about.html') {
-            this.ajaxperiodic = new AJAXPeriodic(config.servicesPath + "/data/aboutData.json")
+            this.ajaxperiodic = new AJAXPeriodic(this.domain + "/data/aboutData.json")
         }
 
 
