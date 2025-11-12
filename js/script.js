@@ -1,14 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-
-    const page = location.pathname.split("/").pop();
-
-    // if (page === 'index.html' || page === '') {
-    //     getProjects();
-    // } else if (page === 'exp.html') {
-    //     getExp();
-    // }
-
-
     document.getElementById('language-select').addEventListener('change', function () {
         const selectedLang = this.value;
         updateLanguage(selectedLang);
