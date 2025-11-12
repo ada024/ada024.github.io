@@ -7,11 +7,11 @@ class AppController {
 
         // Determine which page
         if (this.page === 'index.html' || this.page === '') {
-            this.ajaxperiodic = new AJAXPeriodic("proData.json")
+            this.ajaxperiodic = new AJAXPeriodic(config.servicesPath + "/data/proData.json")
         } else if (this.page === 'exp.html') {
-            this.ajaxperiodic = new AJAXPeriodic("expData.json")
+            this.ajaxperiodic = new AJAXPeriodic(config.servicesPath + "/data/expData.json")
         } else if (this.page === 'about.html') {
-            this.ajaxperiodic = new AJAXPeriodic("aboutData.json")
+            this.ajaxperiodic = new AJAXPeriodic(config.servicesPath + "/data/aboutData.json")
         }
 
 
@@ -31,8 +31,6 @@ class AppController {
     run() {
 
         this.ajaxperiodic.dataReceived = this.updatesReceived.bind(this)
-
-
         if (this.page === 'index.html' || this.page === '') {
             this.listUI = new ProjectListUI();
         } else if (this.page === 'exp.html') {

@@ -1,5 +1,5 @@
 "use strict";
 
 let config = {
-        servicesPath: '../data.json'
+        servicesPath: 'https://storage.googleapis.com/have-i-read-it.appspot.com/showcase'
 }
