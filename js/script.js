@@ -3,8 +3,42 @@ document.addEventListener('DOMContentLoaded', () => {
         const selectedLang = this.value;
         updateLanguage(selectedLang);
     });
+
+    loadModal();
 });
 
+
+function loadModal() {
+    fetch('modal.html')
+        .then(r => r.text())
+        .then(html => {
+            document.body.insertAdjacentHTML('beforeend', html);
+
+
+            var modal = document.getElementById("aboutModal");
+
+
+            var btn = document.getElementById("aboutBtn");
+
+            var span = document.getElementsByClassName("close")[0];
+
+            btn.onclick = function () {
+                modal.style.display = "block";
+            }
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+
+//  Clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+
+        });
+
+}
 
 function toggleDarkMode() {
     document.body.classList.toggle("dark-mode");
@@ -24,9 +58,9 @@ fetch('lang.json')
 
         const storLang = localStorage.getItem('lang');
         if (storLang) {
-        updateLanguage(storLang);
+            updateLanguage(storLang);
 
-        }else {
+        } else {
             updateLanguage("en"); // default language
         }
 
@@ -35,7 +69,6 @@ fetch('lang.json')
     .catch(error => {
         console.error("Error loading language file:", error);
     });
-
 
 
 function updateLanguage(lang) {
@@ -49,10 +82,9 @@ function updateLanguage(lang) {
 }
 
 
-
-
 function toggleMenu() {
     document.getElementById("primaryNav").classList.toggle("open");
 }
+
 let x = document.getElementById('hamburgerBtn');
 x.onclick = toggleMenu;
