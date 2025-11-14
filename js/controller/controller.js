@@ -1,8 +1,9 @@
 class AppController {
     constructor(containerId) {
         this._containerId = containerId
-        this.domain =config.prod
+        this.domain =config.dev
         this.listUI = null
+        this.barUI = null
         // used for page-content load
         this.page = location.pathname.split("/").pop();
 
@@ -13,6 +14,7 @@ class AppController {
             this.ajaxperiodic = new AJAXPeriodic(this.domain + "/data/expData.json")
         } else if (this.page === 'about.html') {
             this.ajaxperiodic = new AJAXPeriodic(this.domain + "/data/aboutData.json")
+            this.ajaxBarChartperiodic = new AJAXPeriodic(this.domain + "/data/barChartData.json")
         }
 
 
@@ -32,15 +34,18 @@ class AppController {
     run() {
 
         this.ajaxperiodic.dataReceived = this.updatesReceived.bind(this)
+        this.ajaxBarChartperiodic.dataReceived = this.updateBarChart.bind(this)
         if (this.page === 'index.html' || this.page === '') {
             this.listUI = new ProjectListUI();
         } else if (this.page === 'exp.html') {
             this.listUI = new ExpListUI();
         } else if (this.page === 'about.html') {
             this.listUI = new AboutUI();
+            this.barUI = new BarChartUI();
         }
 
         this.ajaxperiodic.start()
+        this.ajaxBarChartperiodic.start()
         //   this.ajaxperiodic.stop();
     }
 
@@ -72,6 +77,8 @@ class AppController {
                     this.listUI.addExp(item);
                 })
             } else if (this.page === 'about.html') {
+
+
                 const storLang = localStorage.getItem('lang');
                 this.aboutInfo = null;
                 if (storLang) {
@@ -81,11 +88,31 @@ class AppController {
                 }
 
                 this.listUI.clear();
-
+                this.barUI.clear();
                 this.listUI.addAbout(this.aboutInfo);
+                this.barUI.addBarChart()
+
             }
 
         }
         return true
+    }
+
+
+
+    updateBarChart(jsontext) {
+        const res = JSON.parse(jsontext);
+        console.log(res);
+        if (!res) throw new ServerError()
+
+        if (typeof res != "undefined") {
+             if (this.page === 'about.html') {
+                this.barUI.clear();
+                this.barUI.addBarChart(res)
+            }
+
+        }
+        return true
+
     }
 }
