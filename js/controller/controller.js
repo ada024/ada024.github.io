@@ -32,20 +32,26 @@ class AppController {
     }
 
     run() {
-
-        this.ajaxperiodic.dataReceived = this.updatesReceived.bind(this)
-        this.ajaxBarChartperiodic.dataReceived = this.updateBarChart.bind(this)
         if (this.page === 'index.html' || this.page === '') {
+            this.ajaxperiodic.dataReceived = this.updatesReceived.bind(this)
+            this.ajaxperiodic.start()
             this.listUI = new ProjectListUI();
         } else if (this.page === 'exp.html') {
+            this.ajaxperiodic.dataReceived = this.updatesReceived.bind(this)
+            this.ajaxperiodic.start()
             this.listUI = new ExpListUI();
         } else if (this.page === 'about.html') {
+            this.ajaxperiodic.dataReceived = this.updatesReceived.bind(this)
+            this.ajaxBarChartperiodic.dataReceived = this.updateBarChart.bind(this)
+            this.ajaxperiodic.start()
+            this.ajaxBarChartperiodic.start()
+
             this.listUI = new AboutUI();
             this.barUI = new BarChartUI();
         }
 
-        this.ajaxperiodic.start()
-        this.ajaxBarChartperiodic.start()
+
+
         //   this.ajaxperiodic.stop();
     }
 
