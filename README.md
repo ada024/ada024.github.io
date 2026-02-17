@@ -1,4 +1,4 @@
-A landing page for showingcasing projects.
+A landing page for showcasing projects.
 * Uses only core web technologies (No frameworks)
 * Built with a mobile-first approach.
 * Fetch data using Ajax-technique.
