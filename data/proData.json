@@ -1,0 +1,67 @@
+[{
+    "name": "Frs -portal",
+    "image": "https://storage.googleapis.com/have-i-read-it.appspot.com/showcase/images/projects/thumbnail_1.jpg",
+    "alt": "mt-logo",
+    "desc": "Webportal for FRS",
+    "uri": "",
+    "urisrc": "https://github.com/mohndrilling/frs-portal",
+    "serverTimeStamp": "2022-10-09T22:00:00.906Z"
+  },
+  {
+    "name": "BookLibrary .net",
+    "image": "https://storage.googleapis.com/have-i-read-it.appspot.com/showcase/images/projects/thumbnail_2.jpg",
+    "alt": "bookLib-thub",
+    "desc": "A library project in .NET",
+    "uri": "",
+    "urisrc": "https://github.com/ada024/booklib-webapp/tree/main/BookLibraryWeb",
+    "serverTimeStamp": "2021-10-09T22:00:00.906Z"
+
+  },
+  {
+    "name": "Web-portfolio",
+    "image": "https://storage.googleapis.com/have-i-read-it.appspot.com/showcase/images/projects/thumbnail_9.jpg",
+    "alt": "Webportefolio",
+    "desc": "A web page for showing projects ...(Flutter Web - Preview) Deprecated",
+    "uri": "https://web-portefolie.web.app",
+    "urisrc": "https://web-portefolie.web.app",
+    "serverTimeStamp": "2020-10-09T22:00:00.906Z"
+  },
+  {
+    "name": "Naeva app",
+    "image": "https://storage.googleapis.com/have-i-read-it.appspot.com/showcase/images/projects/thumbnail_10.jpg",
+    "alt": "Naeva-app",
+    "desc": "The Naeva app is an e-authentication application for work sites. Naeva is a Norwegian tech...(Flutter)",
+    "uri": "https://play.google.com/store/apps/details?id=no.naeva&hl=en_NZ",
+    "urisrc": "https://play.google.com/store/apps/details?id=no.naeva&hl=en_NZ",
+    "serverTimeStamp": "2020-10-09T22:00:00.906Z"
+  },
+  {
+    "name": "Pigify: Admin Access-panel",
+    "image": "https://storage.googleapis.com/have-i-read-it.appspot.com/showcase/images/projects/thumbnail_12.jpg",
+    "alt": "Naeva-app",
+    "desc": "If you are an admin user that manage libraries in the Pigify App then you can log in and manage...(Angular)",
+    "uri": "https://www.pigify.com/onlineadminaccess",
+    "urisrc": "https://github.com/ada024/lending-webapp",
+    "serverTimeStamp": "2020-10-09T22:00:00.906Z"
+  },
+  {
+    "name": "AnimalDex app",
+    "image": "https://storage.googleapis.com/have-i-read-it.appspot.com/showcase/images/projects/thumbnail_6.jpg",
+    "alt": "AnimalDex app",
+    "desc": "An app for looking up owners and their pets...(SwiftUI)",
+    "uri": "https://github.com/ada024/animaldex-app",
+    "urisrc": "https://github.com/ada024/animaldex-app",
+    "serverTimeStamp": "2020-10-09T22:00:00.906Z"
+  },
+  {
+    "name": "Clothing web-app",
+    "image": "https://storage.googleapis.com/have-i-read-it.appspot.com/showcase/images/projects/thumbnail_3.jpg",
+    "alt": "Clothing web-app",
+    "desc": "E-commerce  web-app...(React.js)",
+    "uri": "https://crwn-live.herokuapp.com",
+    "urisrc": "https://github.com/ada024/shop-clothing",
+    "serverTimeStamp": "2020-10-09T22:00:00.906Z"
+  }
+
+
+]

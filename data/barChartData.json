@@ -1,0 +1,8 @@
+[
+  { "label": "GoLang", "value": 90, "color": "tomato" },
+  { "label": "Javascript", "value": 96, "color": "steelblue" },
+  { "label": "Java", "value": 89, "color": "mediumseagreen" },
+  { "label": "Python", "value": 55, "color": "orange" },
+  { "label": "Swift", "value": 70, "color": "tomato" },
+  { "label": "C#", "value": 40, "color": "steelblue" }
+]
