@@ -20,8 +20,8 @@
   {
     "name": "Web-portfolio",
     "image": "https://storage.googleapis.com/have-i-read-it.appspot.com/showcase/images/projects/thumbnail_9.jpg",
-    "alt": "Webportefolio",
-    "desc": "A web page for showing projects ...(Flutter Web - Preview) Deprecated",
+    "alt": "Webportfolio",
+    "desc": "A web page for showcasing projects ...(Flutter Web - Preview) Deprecated",
     "uri": "https://web-portefolie.web.app",
     "urisrc": "https://web-portefolie.web.app",
     "serverTimeStamp": "2020-10-09T22:00:00.906Z"
