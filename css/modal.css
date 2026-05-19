@@ -35,3 +35,18 @@
     text-decoration: none;
     cursor: pointer;
 }
+
+.dark-mode .modal-content {
+    background-color: #222;
+    color: #fff;
+    border-color: #555;
+}
+
+.dark-mode .close {
+    color: #ccc;
+}
+
+.dark-mode .close:hover,
+.dark-mode .close:focus {
+    color: #fff;
+}
