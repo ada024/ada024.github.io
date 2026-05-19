@@ -57,3 +57,13 @@
     font-size: 12px;
     margin-top: 4px;
 }
+
+.dark-mode #bar-chart {
+    background: #222;
+    border-left-color: #ccc;
+    border-bottom-color: #ccc;
+}
+
+.dark-mode .bar__label {
+    color: #fff;
+}
