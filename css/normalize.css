@@ -370,6 +370,33 @@ footer.dark {
   color: white;
 }
 
+.dark-mode main h1,
+.dark-mode main h3 {
+  color: #9dd4ff;
+}
+
+.dark-mode main a,
+.dark-mode footer.dark a {
+  color: #7ec8ff;
+}
+
+.dark-mode main a:visited,
+.dark-mode footer.dark a:visited {
+  color: #b8a0e8;
+}
+
+.dark-mode main a:hover,
+.dark-mode main a:focus,
+.dark-mode footer.dark a:hover,
+.dark-mode footer.dark a:focus {
+  color: #fff;
+}
+
+.dark-mode main a i,
+.dark-mode footer.dark a i {
+  color: inherit;
+}
+
 .hero-image {
   border-radius: 50%;
 }
