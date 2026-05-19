@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
+    initDarkMode();
+
     document.getElementById('language-select').addEventListener('change', function () {
         const selectedLang = this.value;
         updateLanguage(selectedLang);
@@ -40,12 +42,22 @@ function loadModal() {
 
 }
 
+function setDarkMode(enabled) {
+    document.body.classList.toggle("dark-mode", enabled);
+    document.querySelector('footer').classList.toggle('dark', enabled);
+    document.querySelector('nav').classList.toggle('dark', enabled);
+    document.querySelector('header').classList.toggle('dark', enabled);
+    localStorage.setItem('darkMode', enabled ? "true" : "false");
+}
+
+function initDarkMode() {
+    if (localStorage.getItem('darkMode') === "true") {
+        setDarkMode(true);
+    }
+}
+
 function toggleDarkMode() {
-    document.body.classList.toggle("dark-mode");
-    document.querySelector('footer').classList.toggle('dark');
-    document.querySelector('nav').classList.toggle('dark');
-    document.querySelector('header').classList.toggle('dark');
-    localStorage.setItem('darkMode', "true");
+    setDarkMode(!document.body.classList.contains("dark-mode"));
 }
 
 let translations = {};
