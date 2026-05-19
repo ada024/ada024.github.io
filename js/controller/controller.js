@@ -1,7 +1,7 @@
 class AppController {
     constructor(containerId) {
         this._containerId = containerId
-        this.domain =config.live
+        this.domain =config.dev
         this.listUI = null
         this.barUI = null
         // used for page-content load

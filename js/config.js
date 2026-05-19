@@ -1,7 +1,7 @@
 "use strict";
 
 let config = {
-    prod: 'https://storage.googleapis.com/have-i-read-it.appspot.com/showcase',
+    prod: 'https://sample.com',
     live: "https://ada024.github.io",
     dev: ""
 

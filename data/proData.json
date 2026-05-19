@@ -1,6 +1,16 @@
-[{
+[
+  {
+    "name": "Careerhelper",
+    "image": "images/underDevelopment.png",
+    "alt": "Careerhelper",
+    "desc": "Careerhelper(React & Django)",
+    "uri": "https://github.com/ada024/under-development",
+    "urisrc": "https://github.com/ada024/under-development",
+    "serverTimeStamp": "2022-10-09T22:00:00.906Z"
+  },
+  {
     "name": "Frs -portal",
-    "image": "https://storage.googleapis.com/have-i-read-it.appspot.com/showcase/images/projects/thumbnail_1.jpg",
+    "image": "images/thumbnail_1.jpg",
     "alt": "mt-logo",
     "desc": "Webportal for FRS",
     "uri": "",
@@ -9,7 +19,7 @@
   },
   {
     "name": "BookLibrary .net",
-    "image": "https://storage.googleapis.com/have-i-read-it.appspot.com/showcase/images/projects/thumbnail_2.jpg",
+    "image": "images/thumbnail_2.jpg",
     "alt": "bookLib-thub",
     "desc": "A library project in .NET",
     "uri": "",
@@ -19,34 +29,25 @@
   },
   {
     "name": "Web-portfolio",
-    "image": "https://storage.googleapis.com/have-i-read-it.appspot.com/showcase/images/projects/thumbnail_9.jpg",
+    "image": "images/thumbnail_9.jpg",
     "alt": "Webportfolio",
-    "desc": "A web page for showcasing projects ...(Flutter Web - Preview) Deprecated",
+    "desc": "Webpage showcasing projects ...(Flutter Web - Preview) Deprecated",
     "uri": "https://web-portefolie.web.app",
     "urisrc": "https://web-portefolie.web.app",
     "serverTimeStamp": "2020-10-09T22:00:00.906Z"
   },
   {
     "name": "Naeva app",
-    "image": "https://storage.googleapis.com/have-i-read-it.appspot.com/showcase/images/projects/thumbnail_10.jpg",
+    "image": "images/thumbnail_10.jpg",
     "alt": "Naeva-app",
-    "desc": "The Naeva app is an e-authentication application for work sites. Naeva is a Norwegian tech...(Flutter)",
+    "desc": "The Naeva app",
     "uri": "https://play.google.com/store/apps/details?id=no.naeva&hl=en_NZ",
     "urisrc": "https://play.google.com/store/apps/details?id=no.naeva&hl=en_NZ",
     "serverTimeStamp": "2020-10-09T22:00:00.906Z"
   },
   {
-    "name": "Pigify: Admin Access-panel",
-    "image": "https://storage.googleapis.com/have-i-read-it.appspot.com/showcase/images/projects/thumbnail_12.jpg",
-    "alt": "Naeva-app",
-    "desc": "If you are an admin user that manage libraries in the Pigify App then you can log in and manage...(Angular)",
-    "uri": "https://www.pigify.com/onlineadminaccess",
-    "urisrc": "https://github.com/ada024/lending-webapp",
-    "serverTimeStamp": "2020-10-09T22:00:00.906Z"
-  },
-  {
     "name": "AnimalDex app",
-    "image": "https://storage.googleapis.com/have-i-read-it.appspot.com/showcase/images/projects/thumbnail_6.jpg",
+    "image": "images/thumbnail_6.jpg",
     "alt": "AnimalDex app",
     "desc": "An app for looking up owners and their pets...(SwiftUI)",
     "uri": "https://github.com/ada024/animaldex-app",
@@ -55,13 +56,57 @@
   },
   {
     "name": "Clothing web-app",
-    "image": "https://storage.googleapis.com/have-i-read-it.appspot.com/showcase/images/projects/thumbnail_3.jpg",
+    "image": "images/thumbnail_3.jpg",
     "alt": "Clothing web-app",
     "desc": "E-commerce  web-app...(React.js)",
     "uri": "https://crwn-live.herokuapp.com",
     "urisrc": "https://github.com/ada024/shop-clothing",
     "serverTimeStamp": "2020-10-09T22:00:00.906Z"
+  },
+    {
+    "name": "Easymeals-app",
+    "image": "images/thumbnail_5.jpg",
+    "alt": "Easymeals-app",
+    "desc": "Easymeals for showing nearby takeaways (React Native)",
+    "uri": "https://github.com/ada024/easymeals-app",
+    "urisrc": "https://github.com/ada024/easymeals-app",
+    "serverTimeStamp": "2020-10-09T22:00:00.906Z"
+  },
+    {
+    "name": "Covid19 App",
+    "image": "images/thumbnail_8.jpg",
+    "alt": "Covid19 App",
+    "desc": "App that show statistic for the coronavirus...(Flutter)",
+    "uri": "https://github.com/ada024/covid19-app",
+    "urisrc": "https://github.com/ada024/covid19-app",
+    "serverTimeStamp": "2021-01-22T22:00:00.906Z"
+  },
+    {
+    "name": "Carleasing webapp",
+    "image": "images/thumbnail_7.jpg",
+    "alt": "Carleasing webapp",
+    "desc": "Web page for car-leasing...(Vue.js)",
+    "uri": "https://carleasing-app.web.app/",
+    "urisrc": "https://github.com/ada024/carleasing-webapp",
+    "serverTimeStamp": "2021-01-22T22:00:00.906Z"
+  },
+  {
+    "name": "Pigify-mobilapp",
+    "image": "images/thumbnail_11.jpg",
+    "alt": "Pigify-mobilapp",
+    "desc": "Bachelor's thesis,lending system...(Ionic)",
+    "uri": "https://www.pigify.com",
+    "urisrc": "https://github.com/ada024/lending-mobilapp",
+    "serverTimeStamp": "2020-10-09T22:00:00.906Z"
+  },
+
+  {
+    "name": "Pigify: Admin Access-panel",
+    "image": "images/thumbnail_12.jpg",
+    "alt": "Naeva-app",
+    "desc": "Bachelor's thesis,lending system...(Angular)",
+    "uri": "https://www.pigify.com/onlineadminaccess",
+    "urisrc": "https://github.com/ada024/lending-webapp",
+    "serverTimeStamp": "2020-10-09T22:00:00.906Z"
   }
-
-
 ]
