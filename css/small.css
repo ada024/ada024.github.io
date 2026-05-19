@@ -16,6 +16,30 @@ body {
     margin: auto;
 }
 
+/* Flex rows: equal-height cards; description fills remaining space. */
+#product-container,
+#exp-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+#product-container > section,
+#exp-container > section {
+    float: none;
+    display: flex;
+    flex-direction: column;
+}
+#product-container > section > p:last-child,
+#exp-container > section > p:last-child {
+    flex-grow: 1;
+}
+#product-container > section > img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    object-position: center;
+}
+
 .column {float: left; padding: 0 2vw; margin: 0 0 .75rem 0;}
 .small-12 {width: 100%;}
 .small-6 {width: 50%;}

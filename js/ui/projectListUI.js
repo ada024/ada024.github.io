@@ -24,8 +24,6 @@ class ProjectListUI {
             const img = document.createElement('img');
             img.src = item.image;
             img.alt = item.alt;
-            img.style.minWidth = '240px';
-            img.style.minHeight = '130px';
             section.appendChild(img);
         }
 
