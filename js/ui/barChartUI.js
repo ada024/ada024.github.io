@@ -11,15 +11,13 @@ class BarChartUI {
     }
 
     addBarChart(items) {
-        const section = document.createElement('section');
-        section.className = 'column';
+        if (!items || items.length === 0) {
+            return;
+        }
 
-        if (items) {
+        const maxValue = Math.max(...items.map(d => d.value));
 
-            const chart = document.getElementById('chart');
-            const maxValue = Math.max(...items.map(d => d.value));
-
-            items.forEach(item => {
+        items.forEach(item => {
                 const bar = document.createElement('div');
                 bar.className = 'bar';
 
@@ -43,12 +41,8 @@ class BarChartUI {
                 bar.appendChild(tooltip);
                 bar.appendChild(fill);
                 bar.appendChild(label);
-                this._container.appendChild(bar);
-            });
-
-        }
-
-
+            this._container.appendChild(bar);
+        });
     }
 
 

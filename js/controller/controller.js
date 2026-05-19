@@ -1,7 +1,7 @@
 class AppController {
     constructor(containerId) {
         this._containerId = containerId
-        this.domain =config.dev
+        this.domain =config.live
         this.listUI = null
         this.barUI = null
         // used for page-content load
@@ -41,13 +41,12 @@ class AppController {
             this.ajaxperiodic.start()
             this.listUI = new ExpListUI();
         } else if (this.page === 'about.html') {
+            this.listUI = new AboutUI();
+            this.barUI = new BarChartUI();
             this.ajaxperiodic.dataReceived = this.updatesReceived.bind(this)
             this.ajaxBarChartperiodic.dataReceived = this.updateBarChart.bind(this)
             this.ajaxperiodic.start()
             this.ajaxBarChartperiodic.start()
-
-            this.listUI = new AboutUI();
-            this.barUI = new BarChartUI();
         }
 
 
@@ -94,9 +93,7 @@ class AppController {
                 }
 
                 this.listUI.clear();
-                this.barUI.clear();
                 this.listUI.addAbout(this.aboutInfo);
-                this.barUI.addBarChart()
 
             }
 
